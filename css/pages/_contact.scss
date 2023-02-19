@@ -5,6 +5,9 @@
   justify-content: flex-start;
   min-height: 100vh;
   padding: 0px 10px;
+  h2{
+    padding: 50px;
+  }
 }
 small{
   align-self: center;
@@ -32,7 +35,9 @@ small{
     margin-top: 50px;
     font-size: 22px;
   }
-  
+  strong{
+    color: #1fbdc9;
+  }
   @media screen and (max-width:650px){
     padding: 30px;
     margin-top: 50px;

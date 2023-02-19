@@ -22,10 +22,10 @@ body{
   margin: 0 auto;
 }
 h2{
-  font-size: 100px;
+  font-size: 120px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-family: $font6;
+  font-family: $font10;
   
 
   // -webkit-text-stroke: 1px #282828;
@@ -38,7 +38,7 @@ h2{
   //   -15px -6px 0px #64a5b7;
     // text-shadow: -15px 5px 20px #ced0d3;
   @media screen and (max-width:740px){
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 

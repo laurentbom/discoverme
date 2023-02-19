@@ -1,3 +1,8 @@
+@keyframes createBox {
+  0%   { bottom: 0; }
+  50%  { bottom: -50px; }
+  100% { bottom: 0; }
+}
 .header{
   width: 100%;
   height: 100vh;
@@ -33,7 +38,7 @@
     margin: 0;
     color: white;
     font-size: 90px;
-    font-family: $font4;
+    font-family: $font10;
     span{
       font-size: 40px;
       font-family: $font2;

@@ -76,7 +76,7 @@
     background-color: #282936;
     padding: 20px 22px;
     border-radius: 50%;
-    transition: .2s all ease-in-out;
+    transition: .15s all ease-in;
     border: 2px solid #282936;
     @media screen and (max-width:1100px){
       font-size: 20px;
@@ -102,6 +102,7 @@
     i{
       position: relative;
       transform: rotate(90deg);
+      animation: 1s createBox .3s infinite;
     }
   }
 }
@@ -124,7 +125,7 @@
   .project__btn{
     position: relative;
     font-size: 16px;
-    font-family: $font6;
+    font-family: $font10;
     font-weight: 700;
     letter-spacing: 1.5px;
     border: 3px solid #def8ff;
