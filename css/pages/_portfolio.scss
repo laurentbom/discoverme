@@ -30,7 +30,10 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #2d3142;
+    // background-color: #2d3142;
+    // background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+    // background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
     z-index: 2;
     display: flex;
     flex-direction: column;
