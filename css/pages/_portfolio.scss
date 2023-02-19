@@ -35,10 +35,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    // background-color: #2d3142;
-    // background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-    background-image: linear-gradient(45deg, #8baaaa 0%, #c09bad 100%);
-    // background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    background-color: #2d3142e8;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -63,7 +60,7 @@
     }
     p:nth-of-type(2){
       font-size: 16px;
-      font-weight: 700;
+      font-weight: normal;
       font-family: $font6;
       line-height: 25px;
       letter-spacing: 1.5px;

@@ -1,17 +1,11 @@
 /* ==========================================================================
 Animation System by Neale Van Fleet from Rogue Amoeba
 ========================================================================== */
-// Animation
-@keyframes squarep {
-  0% {
-    transform: translate(0%,-200%);
-  }
-  50% {
-    transform: translate(0%,0%);
-  }
-  100% {
-    transform: translate(0%,0%);
-  }
+// Animation flêche header
+@keyframes createBox {
+  0%   { bottom: 0; }
+  50%  { bottom: -50px; }
+  100% { bottom: 0; }
 }
 
 
