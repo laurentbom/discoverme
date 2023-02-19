@@ -5,9 +5,6 @@
   align-items: flex-start;
   &__title{
     padding: 50px;
-    h2{
-      padding:30px 50px;
-    }
   }
 }
 .project{
@@ -33,7 +30,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #2d3142e7;
+    background-color: #2d3142;
     z-index: 2;
     display: flex;
     flex-direction: column;
