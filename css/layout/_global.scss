@@ -1,18 +1,19 @@
 *{
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 img{
   max-width: 100%;
 }
 li{
   list-style-type: none;
-  cursor: pointer;
+  // cursor: pointer;
 }
 a{
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
+  // cursor: pointer;
 }
 body{
   color: $col1;
@@ -21,25 +22,105 @@ body{
 .wrapper{
   margin: 0 auto;
 }
+
 h2{
   font-size: 120px;
-  letter-spacing: 1.5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   font-family: $font10;
-  
-
-  // -webkit-text-stroke: 1px #282828;
-  //     text-shadow: 0px 4px 4px #282828;
-  //     font-weight: normal;
-  //     letter-spacing: 5px;
-  //     font-size: 120px;
-  
-  // text-shadow: 20px 10px 0px #ff99cc,
-  //   -15px -6px 0px #64a5b7;
-    // text-shadow: -15px 5px 20px #ced0d3;
+  color: #282936;
+  // background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	// -webkit-background-clip: text;
+	// -webkit-text-fill-color: transparent;
   @media screen and (max-width:740px){
     font-size: 60px;
   }
 }
 
+// H1 
+.glitch {
+  position: relative;
+  color: white;
+  mix-blend-mode: lighten;
 
+  &:before,
+  &:after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: transparent;
+      clip: rect(0, 0, 0, 0);
+  }
+  
+  &:before {
+      left: -1px;
+      text-shadow: 1px 0 rgba(red,0.7);
+  }
+
+  &:after {
+      left: 1px;
+      text-shadow: -1px 0 rgba(blue,0.7);
+  }
+
+  &:hover {
+    &:before {
+      text-shadow: 4px 0 rgba(red,0.7);
+      animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+    }
+    &:after {
+      text-shadow: -5px 0 rgba(blue,0.7);
+      animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+    }
+  }
+}
+
+@keyframes glitch-loop-1 {
+  0% { clip: rect(36px, 9999px, 9px, 0) }
+  25% { clip: rect(25px, 9999px, 99px, 0) }
+  50% { clip: rect(50px, 9999px, 102px, 0) }
+  75% { clip: rect(30px, 9999px, 92px, 0) }
+  100% { clip: rect(91px, 9999px, 98px, 0) }
+}
+
+@keyframes glitch-loop-2 {
+  0% { top: -1px; left: 1px; clip: rect(65px, 9999px, 119px, 0) }
+  25% { top: -6px; left: 4px; clip: rect(79px, 9999px, 19px, 0) }
+  50% { top: -3px; left: 2px; clip: rect(68px, 9999px, 11px, 0) }
+  75% { top: 0px; left: -4px; clip: rect(95px, 9999px, 53px, 0) }
+  100% { top: -1px; left: -1px; clip: rect(31px, 9999px, 149px, 0) }
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  // border: 3px solid rgba(15, 172, 36, 0.815);
+  border: 2px solid #282c29;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 100;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+  opacity: .5;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 100;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}

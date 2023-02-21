@@ -2,15 +2,18 @@
 Animation System by Neale Van Fleet from Rogue Amoeba
 ========================================================================== */
 // Animation flêche header
-@keyframes createBox {
-  0%   { bottom: 0; }
-  50%  { bottom: -50px; }
-  100% { bottom: 0; }
+@keyframes bouncearrow {
+	0% {transform: translateX(0%) translateY(0%) rotate(90deg)}
+	25% {transform: translateX(0%) translateY(10%) rotate(90deg)}
+	50% {transform: translateX(0%) translateY(0%) rotate(90deg)}
+	75% {transform: translateX(0%) translateY(-10%) rotate(90deg)}
+	100% {transform: translateX(0%) translateY(0%) rotate(90deg)}
 }
 
 
+
 .animate {
-  animation-duration: 0.75s;
+  animation-duration: 0.5s;
   animation-delay: 0.5s;
   animation-name: animate-fade;
   animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);

@@ -8,7 +8,7 @@
   align-items: center;
   background-color: #c5c5c52a;
   border: 1px solid rgba(31, 29, 29, 0.651);
-  z-index: 3;
+  z-index: 4;
   transition: .3s all ease-in-out;
   &.white{
     background-color: #fff;
@@ -34,7 +34,7 @@
     opacity: 1;
     padding-top: 100px;
     li{
-      cursor: pointer;
+      // cursor: pointer;
       font-weight: 300;
       color: #1d1c1cd0;
       padding: 15px 25px;
@@ -43,7 +43,7 @@
       font-weight: 700;
     }
     &.open{
-      z-index: 3;
+      z-index: 4;
       top: -15px;
       opacity: 1;
     }
@@ -70,7 +70,7 @@
       div{
       position: relative;
       li{
-        cursor: pointer;
+        // cursor: pointer;
         font-size: 12px;
         &:hover{
           background-color: #1d1c1c7c;
