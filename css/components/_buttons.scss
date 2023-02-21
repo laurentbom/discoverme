@@ -37,7 +37,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #FF4655;
+    background: #1D9E62;
     transition: all .4s;
     z-index: 1;
     border-radius: 40px;
@@ -103,7 +103,6 @@
     i{
       position: relative;
       transform: rotate(90deg);
-      // animation: 1s createBox .5s infinite linear;
       animation: bouncearrow 1s infinite linear .25s;
     }
   }
@@ -256,7 +255,6 @@
       font-size: 9px;
       padding: 10px 10px;
     }
-    
   }
 }
 

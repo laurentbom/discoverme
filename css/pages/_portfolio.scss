@@ -9,9 +9,73 @@
     padding-bottom: 120px;
     @media screen and (max-width:740px){
       padding-left: 20px;
+      padding-top: 40px;
+      padding-bottom: 80px;
     }
   }
 }
+
+// .project:nth-of-type(1){
+//   background: url(../../img/8.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(2){
+//   background: url(../../img/css/6.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(3){
+//   background: url(../../img/js/7.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(4){
+//   background: url(../../img/css/10.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(5){
+//   background: url(../../img/news/1.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(6){
+//   background: url(../../img/js/10.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(7){
+//   background: url(../../img/news/3.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(8){
+//   background: url(../../img/js/8.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(9){
+//   background: url(../../img/css/2.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(10){
+//   background: url(../../img/css/5.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(11){
+//   background: url(../../img/css/9.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+// .project:nth-of-type(12){
+//   background: url(../../img/css/1.JPG);
+//   background-position: center;
+//   background-size: cover;
+// }
+
 .project{
   border: 1px solid rgba(0, 0, 0, 0.288);
   position: relative;
@@ -68,6 +132,9 @@
     color: #f9fafa;
     padding: 50px;
     width: 100%;
+    @media screen and (max-width:950px){
+      gap: 0px;
+    }
     .project__btn{
       opacity: 0;
       transform: translateY(-100%);
